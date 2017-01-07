@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Movie Search</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <div class="main-header">
+    <div class="inner">
+      <h1 class="main-title">MovieSearch</h1>
+      <form class="search-form">
+        <label class="is-hidden" for="search">Search a title</label>
+        <input type="search" name="search" id="search" placeholder="Search a Title...">
+        <label class="is-hidden" for="year">Any Year</label>
+        <input type="text" maxlength="4" name="year" id="year" placeholder="Year"> 
+        <button type="submit" id="submit" class="search-button"><i class="material-icons icn-search">search</i></button>
+      </form>   
+    </div>   
+  </div>
+  
+  
+  <div id="description" class="is-hidden">
+    
+    <div class="description-content">
+      <div class="button"><button value="-1">Previous Movie</button><button value="1">Next Movie</button></div>
+        <button class="description-back">Search Results</button>
+        <img  class="description-image" src="">
+        <h1 class="description-title"></h1>
+        <h3 class="description-rating"></h3>  
+      </div>
+      <h2>Plot Synopsis</h2>
+      <p class="description-plot"></p>
+	    <a class="description-a">View on IMDB</a>
+	</div>
+  
+  
+  <div class="main-content clearfix">
+    <ul id="movies" class="movie-list">
+      <li class="desc">
+        <i class="material-icons icn-movie">movie</i>
+        Search movie titles and TV shows
+      </li>
+  </ul>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
